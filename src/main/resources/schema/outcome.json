@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "outcomeId": {
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "outcomeType": {
+      "$ref": "outcomeType.json"
+    },
+    "odds": {
+      "description": "Value for odds",
+      "type": "number",
+      "existingJavaType": "java.math.BigDecimal",
+      "format": "decimal"
+    },
+    "outcomeName": {
+      "description": "Name of Outcome",
+      "type": "string",
+      "existingJavaType": "java.lang.String"
+    },
+    "probability": {
+      "description": "Value for probability",
+      "type": "number",
+      "existingJavaType": "java.math.BigDecimal",
+      "format": "decimal"
+    }
+  },
+  "required": [
+    "outcomeId"
+  ]
+}

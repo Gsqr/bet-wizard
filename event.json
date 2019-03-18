@@ -1,0 +1,14 @@
+{
+  "eventId": 11111,
+  "eventName": "EVENNAME",
+  "eventGroupId": 2222288,
+  "eventTreePath": [
+    {
+      "eventGroupId": 2222288,
+      "eventGroupName": "EVENTGROUPNAME"
+    }
+  ],
+  "startDate": "2019-03-13T18:45:13.875+0000",
+  "settledDate": "2019-03-13T18:45:13.875+0000",
+  "sportId": "SPORTID"
+}

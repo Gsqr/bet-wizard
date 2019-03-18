@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "eventId": {
+      "description": "Sportsbook event id",
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "betOfferId": {
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "betOfferType": {
+      "$ref": "betOfferType.json"
+    },
+    "line": {
+      "description": "Line in over/under offers. Over/Under 2.5 goals for example",
+      "type": "number",
+      "existingJavaType": "java.math.BigDecimal",
+      "format": "decimal"
+    },
+    "raceToValue": {
+      "description": "Example offer: first to 2 goals. The value 2 is the raceToValue. Not provided for Sportsbook offers",
+      "type": "integer",
+      "format": "int64"
+    },
+    "occurrenceNumber": {
+      "description": "Example offer: Team to score goal number 3. The value 3 is the occurrenceNumber. Not provided for Sportsbook offers",
+      "type": "integer",
+      "format": "int32"
+    },
+    "outcomes": {
+      "description": "List of outcomes. Includes each way outcomes that are not visible in any UI",
+      "type": "array",
+      "items": {
+        "$ref": "outcome.json"
+      }
+    }
+  },
+  "required": [
+    "eventId",
+    "betOfferId",
+    "betOfferType",
+    "outcomes"
+  ]
+}

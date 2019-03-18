@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "description": "Sportsbook Event Group id and name",
+  "type": "object",
+  "properties": {
+    "eventGroupId": {
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "eventGroupName": {
+      "description": "the event group name as it is stored in sportsbook",
+      "type": "string"
+    }
+  },
+  "required": ["eventGroupId"]
+}

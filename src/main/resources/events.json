@@ -1,0 +1,72 @@
+[
+  {
+    "eventId": 1000000001,
+    "eventName": "Bournemouth-Newcastle United",
+    "eventGroupId": 1000000001,
+    "eventTreePath": [
+      {
+        "eventGroupId": 1000000001,
+        "eventGroupName": "Premier League"
+      }
+    ],
+    "startDate": "2019-03-15T11:14:58.877+0000",
+    "settledDate": "2019-03-15T08:14:58.878+0000",
+    "sportId": "Football"
+  },
+  {
+    "eventId": 1000000002,
+    "eventName": "Burnley-Leicester City",
+    "eventGroupId": 1000000001,
+    "eventTreePath": [
+      {
+        "eventGroupId": 1000000001,
+        "eventGroupName": "Premier League"
+      }
+    ],
+    "startDate": "2019-03-15T11:14:58.878+0000",
+    "settledDate": "2019-03-15T08:14:58.878+0000",
+    "sportId": "Football"
+  },
+  {
+    "eventId": 1000000003,
+    "eventName": "West Ham-Huddersfield Town",
+    "eventGroupId": 1000000001,
+    "eventTreePath": [
+      {
+        "eventGroupId": 1000000001,
+        "eventGroupName": "Premier League"
+      }
+    ],
+    "startDate": "2019-03-15T11:14:58.878+0000",
+    "settledDate": "2019-03-15T08:14:58.878+0000",
+    "sportId": "Football"
+  },
+  {
+    "eventId": 1000000004,
+    "eventName": "Fulham-Liverpool",
+    "eventGroupId": 1000000001,
+    "eventTreePath": [
+      {
+        "eventGroupId": 1000000001,
+        "eventGroupName": "Premier League"
+      }
+    ],
+    "startDate": "2019-03-15T11:14:58.878+0000",
+    "settledDate": "2019-03-15T08:14:58.878+0000",
+    "sportId": "Football"
+  },
+  {
+    "eventId": 1000000005,
+    "eventName": "Everton-Chelsea",
+    "eventGroupId": 1000000001,
+    "eventTreePath": [
+      {
+        "eventGroupId": 1000000001,
+        "eventGroupName": "Premier League"
+      }
+    ],
+    "startDate": "2019-03-15T11:14:58.878+0000",
+    "settledDate": "2019-03-15T08:14:58.878+0000",
+    "sportId": "Football"
+  }
+]

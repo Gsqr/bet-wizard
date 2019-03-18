@@ -1,0 +1,12 @@
+.DS_Store
+.idea
+.idea/
+*.iml
+*.log
+*.log.*
+target
+.java-version
+node_modules
+src/**/*.css
+.tmp*
+.svn/

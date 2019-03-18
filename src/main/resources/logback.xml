@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <jmxConfigurator />
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d %-5p [%c] [%thread]: %m%n</Pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <appender name="BET-WIZARD" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/bet-wazard.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>logs/bet-wazard.%d{yyyy-MM-dd}.log</FileNamePattern>
+
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <Pattern>%d %-5p [%c] [%thread] [%X{%h}] [%X{r}]: %m%n</Pattern>
+        </encoder>
+    </appender>
+
+
+    <!-- Limit the org.apache category to INFO as its DEBUG is verbose -->
+    <logger name="org.springframework" additivity="false">
+        <level value="ERROR"/>
+        <appender-ref ref="BET-WIZARD"/>
+    </logger>
+
+    <!-- ======================= -->
+    <!-- Setup Application categories -->
+    <!-- ======================= -->
+
+    <!-- Add all website applications logging to BET-WIZARD appender as default -->
+    <logger name="com.kambi" additivity="false">
+        <appender-ref ref="BET-WIZARD"/>
+    </logger>
+
+
+    <!-- =======================  -->
+    <!-- Setup the Root category -->
+    <!-- ======================= -->
+
+    <root>
+        <appender-ref ref="CONSOLE"/>
+    </root>
+</configuration>

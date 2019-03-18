@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "description": "Contains information related to an event from Sportsbook",
+  "properties": {
+    "eventId": {
+      "description": "Sportsbook event id",
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "eventName":{
+      "description": "Name of the event stored in Sportsbook",
+      "type": "string"
+    },
+    "eventGroupId": {
+      "description": "The group this event belongs to. This is usually a league or tournament but can be anything defined by the traders.",
+      "type": "integer",
+      "existingJavaType": "Long",
+      "format": "int64"
+    },
+    "eventTreePath": {
+      "description": "Ordered list representing the tree path (hierarchy) from Sportsbook",
+      "type": "array",
+      "items": {
+        "$ref": "eventGroup.json"
+      }
+    },
+    "startDate": {
+      "description": "The user defined event start date",
+      "type": "string",
+      "format": "date-time"
+    },
+    "settledDate": {
+      "description": "The date when all betoffers on the event are settled",
+      "type": "string",
+      "format": "date-time"
+    },
+    "sportId": {
+      "description": "Sport identifier, like FOOTBALL",
+      "type": "string"
+    }
+  },
+  "required": [
+    "eventId"
+  ]
+}
